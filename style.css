@@ -1,0 +1,130 @@
+body {
+  background-color: rgb(243, 242, 242);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: start;
+  height: 80vh;
+}
+.card {
+  margin: 10% auto;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "header header"
+      "main aside";
+  justify-content: center;
+}
+.item1-a{
+  padding-left: 20px;
+  font-size: 12px;
+  background-color: #fff;
+  grid-area: header;
+  /* background-color: hsl(204, 43%, 93%); */
+}
+.item1-a, h2{
+  color: hsl(179, 62%, 43%);
+  padding-bottom: 5px;
+  
+}
+.item1-a, h3{
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 5px;
+}
+.item1-a, p {
+  color: hsl(218, 22%, 67%);
+  padding-bottom: 5px;
+}
+
+/* card two */
+.first {
+  grid-area: main;
+  background-color: hsl(179, 75%, 31%);
+  padding-left: 20px;
+}
+.first >h1 {
+  padding-top: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.first p> span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding-right: 5px;
+}
+.first p{
+  padding-top: 10px;
+  font-size: 12px !important;
+}
+.first h5{
+  font-size: 10px;
+  color: hsl(201, 13%, 74%);
+}
+.first button {
+  border: none;
+  padding: 10px 60px;
+  color: #fff;
+  font-size: 10px;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* card three */
+.second {
+  grid-area: aside;
+  background-color: hsl(179, 62%, 43%);
+  padding-left: 20px;  
+}
+
+.second h1{
+  padding-top: 16px;
+  color: #fff;
+}
+.second p {
+  color: hsl(201, 13%, 74%);
+}
+
+/* media querry */
+@media (max-width: 480px){
+  .card {
+    margin: 5% auto;
+    grid-template-areas: "header header"
+    "main main"
+    "aside aside";
+  }
+  .item1-a{
+    padding-left: 40px;
+  }
+  .first{
+    padding-left: 40px;
+  }
+  .first button{
+    margin-bottom: 40px;
+  }
+  .second {
+    padding-left: 40px;
+  }
+}
+/* footer */
+footer {
+  margin-top: 40vh;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: hsl(179, 75%, 31%);
+  text-align: center;
+  padding: 2px;
+}
+footer a{
+  text-decoration: none;
+  cursor: pointer;
+  color: bisque;
+}
+footer a:hover {
+  color: #fff;
+}
+footer a:active {
+  color: aqua;
+}
